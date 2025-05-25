@@ -1,0 +1,415 @@
+2025-05-21 23:12:17,657 - INFO - Бот запущен...
+2025-05-21 23:12:28,543 - INFO - Успешно получены курсы традиционных валют
+2025-05-21 23:12:28,543 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-21 23:12:28,543 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-21 23:12:28,543 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-21 23:12:28,543 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-21 23:12:28,543 - INFO - Успешно получены курсы криптовалют
+2025-05-21 23:13:03,826 - INFO - Используем кэшированные данные для криптовалют
+2025-05-21 23:13:34,658 - INFO - Используем кэшированные данные для криптовалют
+2025-05-21 23:13:40,310 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-21 23:23:27,593 - INFO - Бот запущен...
+2025-05-21 23:28:18,094 - INFO - Бот запущен...
+2025-05-21 23:28:26,311 - ERROR - Не удалось найти таблицу с курсами на странице Myfin.by
+2025-05-21 23:28:30,963 - ERROR - Не удалось найти таблицу с курсами на странице Myfin.by
+2025-05-21 23:32:55,662 - INFO - Бот запущен...
+2025-05-21 23:33:04,949 - ERROR - Файл bank_rates.json не найден
+2025-05-21 23:53:26,455 - INFO - Бот запущен...
+2025-05-21 23:53:36,898 - INFO - Успешно получены курсы традиционных валют
+2025-05-21 23:53:36,898 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-21 23:53:37,375 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. The server returned HTTP 431 Request Header Fields Too Large. Response body:
+[b'']
+2025-05-21 23:53:37,375 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\User\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\apihelper.py", line 187, in _check_result
+    result_json = result.json()
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 9759, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "C:\Users\User\PycharmProjects\Bot2\main.py", line 237, in handle_best_rates_sort
+    bot.reply_to(message, response, reply_markup=create_main_menu())
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 5972, in reply_to
+    return self.send_message(message.chat.id, text, reply_parameters=reply_parameters, **kwargs)
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 1800, in send_message
+    apihelper.send_message(
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\apihelper.py", line 275, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\apihelper.py", line 190, in _check_result
+    raise ApiHTTPException(method_name, result)
+telebot.apihelper.ApiHTTPException: A request to the Telegram API was unsuccessful. The server returned HTTP 431 Request Header Fields Too Large. Response body:
+[b'']
+
+2025-05-22 08:57:27,098 - INFO - Бот запущен...
+2025-05-22 08:57:46,068 - INFO - Успешно получены курсы традиционных валют
+2025-05-22 08:57:46,068 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:01:58,681 - INFO - Бот запущен...
+2025-05-22 09:02:05,937 - INFO - Успешно получены курсы традиционных валют
+2025-05-22 09:02:05,937 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:02:32,875 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:02:32,875 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:02:52,432 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:02:52,433 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:02:52,433 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:02:52,433 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:02:52,433 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:02:52,433 - INFO - Успешно получены курсы криптовалют
+2025-05-22 09:09:46,990 - INFO - Бот запущен...
+2025-05-22 09:10:01,212 - INFO - Успешно получены курсы традиционных валют
+2025-05-22 09:10:01,212 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:10:18,012 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:10:18,012 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:10:21,132 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:10:21,132 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:10:21,958 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:10:21,958 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:16:40,597 - INFO - Бот запущен...
+2025-05-22 09:16:45,332 - INFO - Успешно получены курсы традиционных валют
+2025-05-22 09:16:45,332 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:16:53,197 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:16:53,198 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:17:06,690 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:17:06,690 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:17:10,448 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:17:10,449 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:17:14,497 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:17:14,498 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:17:17,084 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:17:17,084 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:24:25,861 - INFO - Бот запущен...
+2025-05-22 09:24:37,525 - INFO - Успешно получены курсы традиционных валют
+2025-05-22 09:24:37,525 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:24:40,209 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:24:40,209 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:24:42,457 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:24:42,458 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:24:43,786 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:24:43,786 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:25:05,774 - INFO - Бот запущен...
+2025-05-22 09:25:12,083 - INFO - Успешно получены курсы традиционных валют
+2025-05-22 09:25:12,083 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:25:23,853 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:25:23,853 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:25:25,885 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:25:25,886 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:25:27,375 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:25:27,375 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:25:27,587 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+2025-05-22 09:25:27,588 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 9759, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "C:\Users\User\PycharmProjects\Bot2\main.py", line 342, in handle_top_selection
+    bot.reply_to(message, response, reply_markup=create_best_rates_menu())
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 5972, in reply_to
+    return self.send_message(message.chat.id, text, reply_parameters=reply_parameters, **kwargs)
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 1800, in send_message
+    apihelper.send_message(
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\apihelper.py", line 275, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+
+2025-05-22 09:29:47,832 - INFO - Бот запущен...
+2025-05-22 09:30:01,212 - INFO - Успешно получены курсы традиционных валют
+2025-05-22 09:30:01,212 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:30:13,542 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:30:13,542 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:31:04,366 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:31:04,366 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:31:05,992 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:31:05,992 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:31:59,935 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:31:59,935 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:32:00,312 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+2025-05-22 09:32:00,313 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 9759, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "C:\Users\User\PycharmProjects\Bot2\main.py", line 322, in handle_best_rates_sort
+    bot.reply_to(message, response, reply_markup=create_best_rates_menu())
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 5972, in reply_to
+    return self.send_message(message.chat.id, text, reply_parameters=reply_parameters, **kwargs)
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 1800, in send_message
+    apihelper.send_message(
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\apihelper.py", line 275, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+
+2025-05-22 09:32:45,103 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:32:45,103 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:32:59,395 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:32:59,395 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:33:01,831 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:33:01,831 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:38:32,566 - INFO - Бот запущен...
+2025-05-22 09:39:06,199 - INFO - Бот запущен...
+2025-05-22 09:39:16,852 - INFO - Успешно получены курсы традиционных валют
+2025-05-22 09:39:16,852 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:39:17,208 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+2025-05-22 09:39:17,210 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 9759, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "C:\Users\User\PycharmProjects\Bot2\main.py", line 322, in handle_best_rates_sort
+    bot.reply_to(message, response, reply_markup=create_best_rates_menu())
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 5972, in reply_to
+    return self.send_message(message.chat.id, text, reply_parameters=reply_parameters, **kwargs)
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 1800, in send_message
+    apihelper.send_message(
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\apihelper.py", line 275, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+
+2025-05-22 09:39:23,848 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:39:23,848 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:39:24,681 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:39:24,681 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:40:02,347 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:40:02,347 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:40:03,967 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:40:03,968 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:46:34,569 - INFO - Бот запущен...
+2025-05-22 09:46:42,987 - INFO - Успешно получены курсы традиционных валют
+2025-05-22 09:46:42,987 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:47:43,255 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:47:43,255 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:48:37,418 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:48:37,418 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:48:38,655 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:48:38,655 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:50:57,420 - INFO - Бот запущен...
+2025-05-22 09:51:01,538 - INFO - Успешно получены курсы традиционных валют
+2025-05-22 09:51:01,539 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:51:06,805 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:51:22,980 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:51:22,980 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:51:23,235 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+2025-05-22 09:51:23,236 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 9759, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "C:\Users\User\PycharmProjects\Bot2\main.py", line 322, in handle_best_rates_sort
+    bot.reply_to(message, response, reply_markup=create_best_rates_menu())
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 5972, in reply_to
+    return self.send_message(message.chat.id, text, reply_parameters=reply_parameters, **kwargs)
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 1800, in send_message
+    apihelper.send_message(
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\apihelper.py", line 275, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+
+2025-05-22 09:51:48,902 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:51:48,902 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:52:01,405 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:52:01,405 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:52:33,376 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:52:33,376 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:53:29,819 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:53:29,819 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:53:46,426 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:53:46,427 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 09:54:42,808 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:54:42,808 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:54:42,809 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:54:42,809 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:54:42,809 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 09:54:42,809 - INFO - Успешно получены курсы криптовалют
+2025-05-22 10:06:20,537 - INFO - Бот запущен...
+2025-05-22 10:06:31,366 - INFO - Успешно получены курсы традиционных валют
+2025-05-22 10:06:31,366 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 10:06:34,036 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 10:06:34,036 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 10:06:53,949 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 10:06:53,950 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 10:06:56,248 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 10:06:56,248 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 10:14:46,939 - INFO - Бот запущен...
+2025-05-22 10:15:01,931 - ERROR - Ошибка при чтении bank_rates.json: Expecting property name enclosed in double quotes: line 67 column 13 (char 1308)
+2025-05-22 10:15:09,992 - ERROR - Ошибка при чтении bank_rates.json: Expecting property name enclosed in double quotes: line 67 column 13 (char 1308)
+2025-05-22 10:15:39,343 - INFO - Бот запущен...
+2025-05-22 10:15:51,761 - INFO - Бот запущен...
+2025-05-22 10:15:58,543 - INFO - Успешно получены курсы традиционных валют
+2025-05-22 10:15:58,544 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 10:16:03,893 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 10:16:03,893 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 10:42:08,551 - INFO - Бот запущен...
+2025-05-22 10:43:23,653 - INFO - Успешно получены курсы традиционных валют
+2025-05-22 10:43:23,653 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 10:43:23,653 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 10:43:23,653 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 10:43:23,653 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 10:43:23,654 - INFO - Успешно получены курсы криптовалют
+2025-05-22 10:44:03,870 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 10:44:03,870 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 10:44:04,547 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+2025-05-22 10:44:04,547 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 9759, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "C:\Users\User\PycharmProjects\Bot2\main.py", line 317, in handle_best_rates_sort
+    bot.reply_to(message, response, reply_markup=create_best_rates_menu())
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 5972, in reply_to
+    return self.send_message(message.chat.id, text, reply_parameters=reply_parameters, **kwargs)
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 1800, in send_message
+    apihelper.send_message(
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\apihelper.py", line 275, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+
+2025-05-22 10:44:40,867 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 10:44:40,867 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 10:44:51,882 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 10:44:51,882 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 10:45:05,444 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 10:45:05,445 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 10:45:08,558 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 10:45:08,558 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 11:33:38,059 - INFO - Бот запущен...
+2025-05-22 11:33:52,169 - INFO - Успешно получены курсы традиционных валют
+2025-05-22 11:33:52,170 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 11:33:52,170 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 11:33:52,170 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 11:33:52,170 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 11:33:52,170 - INFO - Успешно получены курсы криптовалют
+2025-05-22 11:34:28,790 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 11:34:28,790 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-22 11:34:39,344 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-22 11:34:39,344 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-23 12:23:02,704 - INFO - Бот запущен...
+2025-05-23 12:24:26,021 - INFO - Успешно получены курсы традиционных валют
+2025-05-23 12:24:26,021 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-23 12:24:26,022 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-23 12:24:26,022 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-23 12:24:26,022 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-23 12:24:26,022 - INFO - Успешно получены курсы криптовалют
+2025-05-23 12:24:44,321 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-23 12:24:44,321 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-23 12:25:11,113 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-23 12:25:11,113 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-23 12:25:13,707 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-23 12:25:13,707 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-23 16:19:37,369 - INFO - Бот запущен...
+2025-05-23 16:19:46,613 - INFO - Успешно получены курсы традиционных валют
+2025-05-23 16:20:00,827 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-23 16:20:00,827 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-23 16:20:14,551 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-23 16:20:15,765 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-23 16:20:16,747 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-23 16:20:23,055 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-23 16:20:23,055 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-23 16:20:23,056 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-23 16:20:23,056 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-23 16:20:23,056 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-23 16:20:23,056 - INFO - Успешно получены курсы криптовалют
+2025-05-23 16:20:33,752 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-23 16:20:33,752 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-23 16:20:34,202 - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+2025-05-23 16:20:34,203 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 1235, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\util.py", line 150, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\util.py", line 93, in run
+    task(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 9759, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "C:\Users\User\PycharmProjects\Bot2\main.py", line 317, in handle_best_rates_sort
+    bot.reply_to(message, response, reply_markup=create_best_rates_menu())
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 5972, in reply_to
+    return self.send_message(message.chat.id, text, reply_parameters=reply_parameters, **kwargs)
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\__init__.py", line 1800, in send_message
+    apihelper.send_message(
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\apihelper.py", line 275, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+  File "C:\Users\User\PycharmProjects\Bot2\.venv\lib\site-packages\telebot\apihelper.py", line 195, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+
+2025-05-23 16:20:39,313 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-23 16:20:44,043 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-23 16:20:44,043 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-23 16:20:52,991 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-23 16:20:52,991 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-23 16:20:59,876 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-23 16:20:59,876 - INFO - Курсы успешно загружены из bank_rates.json
+2025-05-23 16:21:12,540 - INFO - Используем кэшированные данные для традиционных валют
+2025-05-23 16:21:12,541 - INFO - Курсы успешно загружены из bank_rates.json
